@@ -1,0 +1,90 @@
+
+/* -----signup form----- */
+.wholebody {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: url(img/hand-1248053_1280.jpg); */
+    background-size: cover;
+
+}
+
+.scontainer {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.scontainer .forms {
+    padding: 30px;
+}
+
+.scontainer .forms .title {
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.forms .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 60px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+
+}
+
+.forms .input-feilds {
+    background-color: red;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+.input-feilds input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid#ce8080;
+    border-top: 2px solid transparent;
+}
+
+.input-feilds input :is(:focus, :valid) {
+    border-bottom-color: #050605;
+}
+
+.input-feilds i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.input-feilds input :is(:focus, :valid)~i {
+    color: #050605;
+}
+
+.input-feilds i.icon {
+    left: 0;
+
+}
+
+.input-feilds i.showhide {
+    right: 0;
+
+}
